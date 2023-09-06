@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class ResourceNotFoundException extends Exception {
     private static final long serialVersionUID = 1L;
 
-    public ResourceNotFoundException(Class<?> entityClass, Long id) {
-        super("Resource " + entityClass.getSimpleName() + " with id: " + id + " does not exist.");
+    public ResourceNotFoundException(Long id) {
+        super("Resource with id: " + id + " does not exist.");
     }
 
 
